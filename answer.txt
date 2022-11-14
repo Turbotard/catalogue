@@ -20,9 +20,8 @@ Requette :
 6)  SELECT DISTINCT * FROM user
 
 
-7)  SELECT * FROM films
-    INNER JOIN categorie
-    WHERE id FROM categorie = 51
+7)  SELECT * FROM film,categorie WHERE categorie.id=51
+
 
 8)  SELECT AVG(note) FROM commentaire
 
