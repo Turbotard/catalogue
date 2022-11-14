@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `commentaire` (
 --
 
 INSERT INTO `commentaire` (`id`, `id_film`, `id_user`, `note`, `commentaire`) VALUES
-(1, 43, 52, 3, 'j\'ai souri mais pas ri'),
+(1, 43, 52, 3, 'j ai souri mais pas ri'),
 (2, 35, 53, 3, 'peut mieux faire'),
 (3, 36, 54, 2, 'bienn'),
 (4, 35, 54, 5, 'Genial'),
@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `film` (
 --
 
 INSERT INTO `film` (`id`, `titre`, `slug`, `image`, `prix`, `description`, `date_sortie`) VALUES
-(36, 'Shining', 'shining', '3280da8582968cd3e0f341ca235ea5f9.png', 20, 'Jack Torrance, gardien d\'un hôtel fermé l\'hiver, sa femme et son fils Danny s\'apprêtent à vivre de longs mois de solitude. Danny, qui possède un don de médium, le Shining, est effrayé à l\'idée d\'habiter ce lieu, théâtre marqué par de terribles évènements passés...										', '1980-10-16'),
+(36, 'Shining', 'shining', '3280da8582968cd3e0f341ca235ea5f9.png', 20, 'Jack Torrance, gardien d\'un hôtel fermé l\'hiver, sa femme et son fils Danny s\'apprêtent à vivre de longs mois de solitude. Danny qui possède un don de médium, le Shining, est effrayé à l\'idée d\'habiter ce lieu théâtre marqué par de terribles évènements passés...										', '1980-10-16'),
 (35, 'The Matrix', 'the-matrix', '4fb60596008ffe50f8b16ca54b68542c.jpg', 20, 'Programmeur anonyme dans un service administratif le jour, Thomas Anderson devient Neo la nuit venue. Sous ce pseudonyme, il est l\'un des pirates les plus recherchés du cyber-espace. À cheval entre deux mondes, Neo est assailli par d\'étranges songes et des messages cryptés provenant d\'un certain Morpheus. Celui-ci l\'exhorte à aller au-delà des apparences et à trouver la réponse à la question qui hante constamment ses pensées : qu\'est-ce que la Matrice ?', '1999-06-11'),
 (43, 'Ben-Hur', 'benhur', 'c715dfae10c54589071ff828eb04297f.jpg', 200, 'film primé de 12 oscars', '1959-01-13');
 
@@ -113,14 +113,14 @@ INSERT INTO `film` (`id`, `titre`, `slug`, `image`, `prix`, `description`, `date
 DROP TABLE IF EXISTS `films_categs`;
 CREATE TABLE IF NOT EXISTS `films_categs` (
   `id_film` int NOT NULL,
-  `id_categorie` int NOT NULL,
+  `id_categorie` int NOT NULL
 ) ENGINE=MyISAM AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb3;
 
 --
 -- Déchargement des données de la table `films_categs`
 --
 
-INSERT INTO `films_categs` (`id_film` `id_categorie`) VALUES
+INSERT INTO `films_categs` (`id_film`, `id_categorie`) VALUES
 (43, 51),
 (35, 35),
 (35, 52),
