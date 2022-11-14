@@ -11,17 +11,23 @@ Requette :
     VALUES 
     ('Seigneur des anneaux','lord of the rings','https://www.youtube.com/watch?v=dQw4w9WgXcQ',100,'Meilleur film au monde',2001-12-19)
 
-4)  SELECT * FROM commentaire WHERE id = 43 AND SELECT * FROM film WHERE id = 43 INNER JOIN commentaire SELECT* FROM commentaire
+4)  SELECT * FROM commentaire WHERE id = 43 AND SELECT * FROM film WHERE id = 43 JOIN commentaire SELECT* FROM commentaire
 
 5)  DELETE *
     FROM film
     WHERE slug LIKE 't%'
 
-6)  
+6)  SELECT DISTINCT * FROM user
 
 
-7)
+7)  SELECT * FROM films
+    INNER JOIN categorie
+    WHERE id FROM categorie = 51
 
-8)
+8)  SELECT AVG(note) FROM commentaire
 
-9)
+9)  SELECT * FROM `film`
+    WHERE MONTH(date_sortie) = 6
+
+10) SELECT DISTINCT role FROM user
+    WHERE commentaire FROM commentaire NOT NULL
