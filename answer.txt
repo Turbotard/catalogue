@@ -11,7 +11,7 @@ Requette :
     VALUES 
     ('Seigneur des anneaux','lord of the rings','https://www.youtube.com/watch?v=dQw4w9WgXcQ',100,'Meilleur film au monde',2001-12-19)
 
-4)  SELECT * FROM commentaire WHERE id = 43 AND SELECT * FROM film WHERE id = 43 JOIN commentaire SELECT* FROM commentaire
+4)  SELECT * FROM commentaire INNER JOIN user ON commentaire.id_user=user.id INNER JOIN film ON commentaire.id_film=film.id WHERE film.id=43
 
 5)  DELETE *
     FROM film
