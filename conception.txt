@@ -1,0 +1,9 @@
+Je voudrai faire un outils de gestion de planning :
+Chaque jour je dois affecter mes professeur à une de mes classes. Une classe n'a qu'un professeur par jour.
+
+J'ai 15 classes d'eleves comportant chacune entre 10 et 30 élèves réparties sur 3 écoles différentes.
+J'ai 15 professeurs
+Ils enseignent chacun une ou plusieurs matières différentes.
+ 
+ 
+Faites la conception SQL de cette situation
