@@ -1,7 +1,7 @@
 Requette : 
 
-1)  SELECT * FROM `film` WHERE date_sortie > 1960-12-12;
-    SELECT titre FROM `film` WHERE date_sortie > 1960-12-12;
+1)  SELECT * FROM `film` WHERE date_sortie > 1960-12-31;
+    SELECT titre FROM `film` WHERE date_sortie < 1960-01-01;
 
 2)  UPDATE film
     SET description = 'nouvelle description'
