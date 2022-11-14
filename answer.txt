@@ -29,4 +29,4 @@ Requette :
     WHERE MONTH(date_sortie) = 6
 
 10) SELECT DISTINCT role FROM user
-    WHERE commentaire FROM commentaire NOT NULL
+    WHERE user.role = 1
