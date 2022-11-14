@@ -1,0 +1,27 @@
+Requette : 
+
+1)  SELECT * FROM `film` WHERE date_sortie > 1960-12-12;
+    SELECT titre FROM `film` WHERE date_sortie > 1960-12-12;
+
+2)  UPDATE film
+    SET description = 'nouvelle description'
+    WHERE id =35
+
+3)  INSERT INTO film (titre,slug,image,prix,description,date_sortie)
+    VALUES 
+    ('Seigneur des anneaux','lord of the rings','https://www.youtube.com/watch?v=dQw4w9WgXcQ',100,'Meilleur film au monde',2001-12-19)
+
+4)  SELECT * FROM commentaire WHERE id = 43 AND SELECT * FROM film WHERE id = 43 INNER JOIN commentaire SELECT* FROM commentaire
+
+5)  DELETE *
+    FROM film
+    WHERE slug LIKE 't%'
+
+6)  
+
+
+7)
+
+8)
+
+9)
